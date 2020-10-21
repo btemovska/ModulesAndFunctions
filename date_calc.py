@@ -23,7 +23,7 @@ print("Month:", time_here[1], time_here.tm_mon)  # Month: 10 10
 print("Day:", time_here[2], time_here.tm_mday)  # Day: 20 20
 
 print()
-#measure how fast you press enter after it tells you when to press enter
+# measure how fast you press enter after it tells you when to press enter
 from time import time as my_timer
 import random
 
@@ -33,8 +33,9 @@ time.sleep(wait_time)
 start_time = my_timer()
 input("Please enter to stop ")
 end_time = my_timer()
-print("Started at " + time.strftime("%X", time.localtime(start_time))) #Started at 22:39:47
-print("Ended at " + time.strftime("%X", time.localtime(end_time))) #Ended at 22:39:49
-print("Your reaction time was {} seconds ".format(end_time - start_time)) #Your reaction time was 1.9579870700836182 seconds
+print("Started at " + time.strftime("%X", time.localtime(start_time)))  # Started at 22:39:47
+print("Ended at " + time.strftime("%X", time.localtime(end_time)))  # Ended at 22:39:49
+print("Your reaction time was {} seconds ".format(
+    end_time - start_time))  # Your reaction time was 1.9579870700836182 seconds
 
 
